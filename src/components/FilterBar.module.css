@@ -1,0 +1,33 @@
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.group {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 4px 12px;
+  font-size: 13px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.chip:hover {
+  border-color: #6c63ff;
+  color: #6c63ff;
+}
+
+.chip.active {
+  background: #6c63ff;
+  color: #fff;
+  border-color: #6c63ff;
+}

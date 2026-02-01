@@ -1,0 +1,94 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  transition: background 0.15s;
+  list-style: none;
+}
+
+.item:hover {
+  background: #f9f9ff;
+}
+
+.completed .title {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.overdue {
+  border-left: 3px solid #e74c3c;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #6c63ff;
+  flex-shrink: 0;
+}
+
+.title {
+  flex: 1;
+  font-size: 15px;
+  color: #333;
+  word-break: break-word;
+}
+
+.meta {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: #f0f0f0;
+  color: #555;
+}
+
+/* カテゴリ色 */
+.cat-仕事 { background: #d4eaff; color: #1a6fbf; }
+.cat-個人 { background: #e8d4ff; color: #7b2fbf; }
+.cat-買い物 { background: #d4ffe8; color: #1abf6f; }
+
+/* 優先度色 */
+.pri-high { background: #ffe0d4; color: #bf4a1a; }
+.pri-medium { background: #fff3d4; color: #bf8c1a; }
+.pri-low { background: #e8eee8; color: #6a8c6a; }
+
+.dueBadge {
+  background: #eef0ff;
+  color: #4a4abf;
+}
+
+.dueBadgeOverdue {
+  background: #ffe0d4;
+  color: #bf1a1a;
+  font-weight: 700;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #bbb;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 4px;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+  flex-shrink: 0;
+}
+
+.deleteBtn:hover {
+  color: #e74c3c;
+  background: #fff0f0;
+}

@@ -1,0 +1,46 @@
+.root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f0ff 0%, #e8eaff 100%);
+  padding: 40px 16px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.count {
+  font-size: 13px;
+  color: #888;
+  margin: 0;
+  text-align: right;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.empty {
+  text-align: center;
+  color: #aaa;
+  font-size: 15px;
+  padding: 32px 0;
+  list-style: none;
+}

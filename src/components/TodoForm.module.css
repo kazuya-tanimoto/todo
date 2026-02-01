@@ -1,0 +1,59 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.titleInput {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.titleInput:focus {
+  border-color: #6c63ff;
+}
+
+.options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.options select,
+.options input[type="date"] {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.options select:focus,
+.options input[type="date"]:focus {
+  border-color: #6c63ff;
+}
+
+.options button {
+  padding: 6px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: #6c63ff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.options button:hover {
+  background: #574fd6;
+}
